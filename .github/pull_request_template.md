@@ -1,11 +1,5 @@
 # Description
 
-Added functionality to delete an item to the list of tasks.
-
-To-Do: 
-
-- [ ] Ensure no memory leaks (need to look into memory leakage and how React event handlers can contribute)
-- [ ] Avoid using ItemName as the filter in the main delete function (inaccurate as two items _could_ have the same name)
 
 ## Type of change
 
