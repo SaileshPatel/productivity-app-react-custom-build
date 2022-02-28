@@ -15,7 +15,8 @@ const List = (props) => {
                         {taskItems}
                     </ul>
                     :
-                    <p>You currently have no tasks to complete.</p>}
+                    <p>You currently have no tasks to complete.</p>
+            }
         </div>
     )
 }
