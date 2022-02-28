@@ -9,9 +9,13 @@ const List = (props) => {
     return (
         <div id="taskList">
             <h2>Tasks to do:</h2>
-            <ul>
-                {taskItems}
-            </ul>
+            {
+                props.tasks.length > 0 ?
+                    <ul>
+                        {taskItems}
+                    </ul>
+                    :
+                    <p>You currently have no tasks to complete.</p>}
         </div>
     )
 }

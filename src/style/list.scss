@@ -1,3 +1,5 @@
+$left-offset: 20px;
+
 #taskList {
     grid-column: 2;
     grid-row: 3;
@@ -6,10 +8,15 @@
 
     h2 {
         font-family: 'Courier New', Courier, monospace;
-        padding-left: 20px;
+        padding-left: $left-offset;
     }
 
     li {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: $left-offset;
     }
 }
