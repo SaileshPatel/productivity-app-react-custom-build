@@ -33,6 +33,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
+                            // prefer Dart SASS over other SASS (i.e Node-SASS)
                             implementation: require("sass"),
                         }
                     }
