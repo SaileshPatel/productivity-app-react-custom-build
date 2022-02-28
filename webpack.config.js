@@ -22,14 +22,21 @@ module.exports = {
                 },
             },
             {
-                test: /\.css$/,
+                test: /\.s[ac]ss$/,
                 use: [
+                    {
+                        loader: 'style-loader'
+                    },
                     {
                         loader: 'css-loader'
                     },
                     {
-                        loader: 'style-loader'
-                    },
+                        loader: 'sass-loader',
+                        options: {
+                            // prefer Dart SASS over other SASS (i.e Node-SASS)
+                            implementation: require("sass"),
+                        }
+                    }
                 ],
             },
         ],
