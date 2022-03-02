@@ -10,8 +10,8 @@ const App = () => {
         setTaskList(prev => [...prev, task]);
     }
 
-    const deleteTaskFromList = (task) => {
-        setTaskList(prev => prev.filter(item => item !== task))
+    const deleteTaskFromList = (index) => {
+        setTaskList(taskList.filter((item, i) => index !== i) )
     }
 
     return (
