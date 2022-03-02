@@ -10,11 +10,15 @@ const App = () => {
         setTaskList(prev => [...prev, task]);
     }
 
+    const deleteTaskFromList = (index) => {
+        setTaskList(taskList.filter((item, i) => index !== i) )
+    }
+
     return (
         <div id="container">
             <h1>Productivity App</h1>
             <TaskForm addItem={addTaskToList} />
-            <List tasks={taskList} />
+            <List tasks={taskList} deleteItem={deleteTaskFromList} />
         </div>
     )
 }

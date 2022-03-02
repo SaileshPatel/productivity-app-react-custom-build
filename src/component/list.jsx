@@ -2,8 +2,13 @@ import React from 'react';
 import "./../style/list.scss";
 
 const List = (props) => {
+
+    const deleteItemFromList = (index) => {
+        props.deleteItem(index);
+    }
+
     const taskItems = props.tasks.map((task, index) => {
-        return <li key={index}>{task}</li>;
+        return <li key={index}>{task} <button onClick={() => deleteItemFromList(index)} >Delete Task</button> </li>;
     });
 
     return (
