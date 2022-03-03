@@ -12,7 +12,7 @@ const List = (props) => {
     });
 
     return (
-        <div id="taskList">
+        <div className="taskList" style={{ gridColumn: props.columnPos, gridRow: props.rowPos }}>
             <h2>Tasks to do:</h2>
             {
                 props.tasks.length > 0 ?
