@@ -17,7 +17,7 @@ const App = () => {
     return (
         <div id="container">
             <h1>Productivity App</h1>
-            <TaskForm addItem={addTaskToList} />
+            <TaskForm addItem={addTaskToList} columnPos={2} rowPos={2} />
             <List tasks={taskList} deleteItem={deleteTaskFromList} />
         </div>
     )
